@@ -1,0 +1,14 @@
+.color-purple {
+    color: rgb(83, 59, 134) !important;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+ #adicionar{
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    line-height:30px;
+    
+}

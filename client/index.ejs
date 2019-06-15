@@ -1,0 +1,244 @@
+<!-- Bruno, Joao Pedro -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Controle de filas</title>
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist\css\bootstrap.css" type="text/css">
+  <link href="src\css\style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="FCamara.png" width="120" height="30" alt="">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="nav" class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="accordion mx-5 my-5" id="accordionExample">
+    <div class="card rounded-lg mb-0">
+      <div class="card-header bg-light" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link navbar-light" type="button" data-toggle="collapse" data-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            FIFA
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body color-purple">
+          <div class="row">
+            <div class="col-12 p-0">
+              <table class="table m-0">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td> <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td><button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td> <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-success mt-3 ml-3" data-toggle="modal"
+              data-target="#modalEntrarFila">Entrar na fila</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-light navbar-light" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link color-orange collapsed" type="button" data-toggle="collapse"
+            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            CS-GO
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body color-purple">
+          <table class="table m-0">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td> <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td> <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" class="btn btn-success mt-3 ml-3" data-toggle="modal"
+          data-target="#modalEntrarFila">Entrar na fila</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-light color" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            Massagem
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body color-purple">
+          <table class="table m-0">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td> <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td><button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td> <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" class="btn btn-success mt-3 ml-3" data-toggle="modal"
+            data-target="#modalEntrarFila">Entrar na fila</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn-success rounded-pill fixed py-1 px-3" data-toggle="modal" data-target="#modalAdicionar"
+    id="adicionar">Criar Fila</button>
+
+
+  <div class="modal fade" id="modalAdicionar" tabindex="-1" role="dialog" aria-labelledby="modalAdicionar"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="inputFila">Crie sua fila:</label>
+              <input type="text" class="form-control" id="inputFila" placeholder="Fila">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Criar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalEntrarFila" tabindex="-1" role="dialog" aria-labelledby="modalEntrarFila"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="inputFila">Nome:</label>
+              <input type="text" class="form-control" id="inputFila" placeholder="Nome">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="logic.js"></script>
+</body>
+
+</html>
