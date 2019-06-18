@@ -1,18 +1,29 @@
 //Edyr
-const persistence = require('../services/persistence.js');
+const persistence = require('../dao/queuePersistence.js');
 const queue = require("../bean/queue");
 
 const getQueues = () => {
-    return persistence.listAll();
+    return persistence.listAllQueuesAndUsers();
 }
 
-const insertQueues = (req, res) => {
-    nQueue = new queue(req.body.id, req.body.nome, new Array());
-    console.log(nQueue)
-    persistence.addQueue(nQueue);
-
+const insertQueue = (req, res) => {
+    let objQueue = new queue(0, req.body.nome, new Array());
+    persistence.insertQueue(objQueue);
 }
-  
-  module.exports = {
-    getQueues, insertQueues
+
+const updateQueue = (req, res) => {
+    let objQueue = new queue(req.body.id, req.body.nome, new Array());
+    persistence.updateQueue(objQueue);
+}
+
+const deleteQueue = (req, res) => {
+    let objQueue = new queue(req.body.id, "", []);
+    persistence.deleteQueue(objQueue);
+}
+
+module.exports = {
+    getQueues,
+    insertQueue,
+    updateQueue,
+    deleteQueue
 }
