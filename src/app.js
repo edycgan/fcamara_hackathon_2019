@@ -8,8 +8,7 @@ const queueRoute = require('./routes/queueRoute');
 const app = express();
 const router = express.Router();
 
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(__dirname + '/../public/'));
 
 app.use('/', index);
