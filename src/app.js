@@ -10,9 +10,8 @@ const router = express.Router();
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use(express.static('C:\\Users\\edyrc\\pro\\fcamaragerenciadorfila\\client\\public'))
+app.use(express.static(__dirname + '/../public/'));
 
-app.set('view engine', 'ejs');
 app.use('/', index);
 app.use('/user', userRoute);
 app.use('/queue', queueRoute);
