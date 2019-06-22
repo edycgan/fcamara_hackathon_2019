@@ -38,7 +38,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel"></h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
@@ -51,6 +51,33 @@
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 							<button type="submit" class="btn btn-success">Criar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="mdlEditarUsuario" tabindex="-1" role="dialog" aria-labelledby="mdlEditarUsuario"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Atualizar Usuário</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="form_user_update">
+						<div class="form-group">
+							<label for="inputFila">Nome:</label>
+							<input type="text" class="form-control" id="inp_user_update_name" placeholder="Digite o Nome">
+							<input type="hidden" id="inp_user_update_user_id">
+							<input type="hidden" id="inp_user_update_queue_id">
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+							<button type="submit" class="btn btn-success">Atualizar</button>
 						</div>
 					</form>
 				</div>
@@ -73,6 +100,32 @@
 							<label for="inputFila">Nome:</label>
 							<input type="text" class="form-control" id="inp_user_name" placeholder="Nome">
 							<input type="hidden" id="inp_queue_id">
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+							<button type="submit" class="btn btn-success">Entrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="mdlQueueUpdate" tabindex="-1" role="dialog" aria-labelledby="mdlQueueUpdate"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Atualizar Fila</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="form_queue_update">
+						<div class="form-group">
+							<label for="inputFila">Nome:</label>
+							<input type="text" class="form-control" id="inp_queue_update_name" placeholder="Nome da fila">
+							<input type="hidden" id="inp_queue_update_id">
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -118,6 +171,9 @@
 						</table>
 						<button type="button" id="btn_user_insert_" class="btn btn-success mt-3 ml-3" data-toggle="modal"
 								data-target="#modalEntrarFila" onclick="btnUserInsertOnClick(this.id)">Entrar na fila</button>
+						<button type="button" id="btn_queue_update_" class="btn btn-primary mt-3 ml-3" data-toggle="modal"
+								data-target="#mdlQueueUpdate" onclick="btnQueueUpdateOnClick(this.id)">Editar Fila</button>
+						<button type="button" id="btn_queue_delete_" class="btn btn-danger mt-3 ml-3" onclick="btnQueueDeleteOnClick(this.id)">Excluir Fila</button>
 					</div>
 				</div>
 			</div>
